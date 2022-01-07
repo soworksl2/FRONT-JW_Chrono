@@ -1,0 +1,25 @@
+@import "_variables";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-roboto;
+}
+
+#page-container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+@import "_watch-page-content";
+
+@import "_watch-vault-page";
+
+@import "_modals";
+
+@import "mobile-design/_mobile-design";

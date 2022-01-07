@@ -1,0 +1,15 @@
+@import "../variables";
+
+#watch-container{
+    #watch{
+        font-size: $font-size-big-mobile;
+
+        .clock{
+            font-size: $font-size-enormous-mobile;
+
+            &:active{
+                font-size: #{$font-size-enormous-mobile - 5};
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import "_variables";
+
+#watch-container{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    #watch{
+        font-size: $font-size-big;
+
+        .watch-location{
+            font-weight: bold;
+        }
+
+        .clock{
+            width: fit-content;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: $font-size-enormous;
+
+            cursor: pointer;
+
+            &:active{
+                font-size: #{$font-size-enormous - 5};
+            }
+        }
+    }
+}
+
+#add-watch-button{
+    margin-top: 20px;
+    font-size: $font-size-big;
+    height: 60px;
+    width: 60px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: $color-brand-red;
+    color: $color-bone-white;
+
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-brand-dark-red;
+    }
+}

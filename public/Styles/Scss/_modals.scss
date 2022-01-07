@@ -1,0 +1,40 @@
+@import "_variables";
+
+#modal-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    background-color: rgba(0, 0, 0, 0.50);
+
+    transition: background-color 1.2s, visibility 1.2s;
+}
+
+.modal-section-hidden{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.modal{
+    width: 80%;
+    background-color: $color-brand-pink;
+
+    transition: transform 1s cubic-bezier(.71,-0.44,.61,1.55);
+
+    .modal-title{
+        color: $color-bone-white;
+        background-color: $color-brand-dark-red;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+.modal-hidden{
+    transform: translateY(-100vh);
+}

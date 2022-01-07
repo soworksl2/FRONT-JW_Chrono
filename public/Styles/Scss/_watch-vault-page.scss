@@ -1,0 +1,55 @@
+@import "_variables";
+
+#watch-vault-page{
+    scroll-snap-align: start;
+    background-color: $color-brand-red;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#watch-vault-page-title{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: $font-size-big;
+    color: $color-bone-white;
+    
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+
+}
+
+#watchs-vault{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@import "_watch-card";
+
+#add-watch-vault-button{
+    position: fixed;
+    z-index: 1;
+    bottom: 40px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-brand-dark-red;
+    font-size: $font-size-big;
+    color: $color-bone-white;
+
+    cursor: pointer;
+
+    transition: right 850ms cubic-bezier(.71,-0.44,.61,1.55);
+}
+
+.add-watch-vault-button-visible{
+    right: 60px;
+}
+
+.add-watch-vault-button-hidden{
+    right: -60px;
+}

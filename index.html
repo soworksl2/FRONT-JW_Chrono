@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JW Chrono</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+        <!-- -*-*-*-*-*-*-*-*-*-*-* -->
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/23a9919148.js" crossorigin="anonymous"></script>
+        <!-- -*-*-*-*-*-*-*-* -->
+
+        <link rel="stylesheet" href="/public/Styles/main-style.css">
+    </head>
+    <body>
+
+        <!-- Modals-Dialogs -->
+        <section id="modal-section" class="">
+
+            <div id="select-watch-dialog" class="modal">
+                <h2 class="modal-title">
+                    Select a watch
+                </h2>
+
+                <div class="modal-form">
+                    <form>
+                        <label for="select-watch-country-cbb">Country:</label>
+                        <select name="select-watch-country-cbb">
+                            <option value="0">United State</option>
+                        </select>
+                        <label for="select-watch-timezone-cbb">TimeZone:</label>
+                        <select name="select-watch-timezone-cbb">
+                            <option value="0">the Idaho panhandle and most of nevada and oregon</option>
+                        </select>
+
+                        <div class="select-watch-buttons-section">
+                            <button>Add</button>
+                            <button>Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- -*-*-*-*-*-*-*-* -->
+
+        <div id="page-container">
+
+            <div id="watch-page">
+
+                <header>
+                    <h1 id="page-title">
+                        <a href="#">
+                            <span>JW</span> Chrono
+                        </a>
+                    </h1>
+                </header>
+
+                <div id="watch-page-content">
+                    <div id="watch-container">
+
+                        <div id="watch">
+
+                            <p>
+                                The current time in <span class="watch-location">the Idaho panhandle and most of Nevada and Oregon, United State</span> is <br>
+                                <span>Sunday, 2 of January of 2022</span>
+                            </p>
+
+                            <p class="clock">23:47:01</p>
+
+                        </div>
+
+                    </div>
+
+                    <button id="add-watch-button"> 
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+
+                <div class="next-page-button">
+                    <div class="first-corner"></div>
+                    <div class="trapezoid-shape">
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </div>
+                    <div class="last-corner"></div>
+                </div>
+            </div>
+
+            <div id="watch-vault-page">
+                <h2 id="watch-vault-page-title">Your watchs</h2>
+
+                <section id="watchs-vault">
+                    
+                    <div class="watch-card">
+                        <div class="watch-card-title">
+                            <i class="watch-card-title-icon fas fa-clock"></i>
+                            <h2 class="watch-card-title-text">Temporizador para hacer la tarea y no recibir un patatus en invierno mamaguevaso infernal</h2>
+                        </div>
+
+                        <p class="watch-card-clock">2 month and 26 days</p>
+
+                        <button class="watch-card-button">
+                            <div class="watch-card-button-circle"></div>
+                            <div class="watch-card-button-circle"></div>
+                            <div class="watch-card-button-circle"></div>
+                        </button>
+                    </div>
+
+                    <div class="watch-card">
+                        <div class="watch-card-title">
+                            <i class="watch-card-title-icon fas fa-clock"></i>
+                            <h2 class="watch-card-title-text">mamaguevaso infernal</h2>
+                        </div>
+
+                        <p class="watch-card-clock">2 month and 26 days</p>
+
+                        <button class="watch-card-button">
+                            <div class="watch-card-button-circle"></div>
+                            <div class="watch-card-button-circle"></div>
+                            <div class="watch-card-button-circle"></div>
+                        </button>
+                    </div>
+
+                    <div class="watch-card">
+                        <div class="watch-card-title">
+                            <i class="watch-card-title-icon fas fa-clock"></i>
+                            <h2 class="watch-card-title-text">potinetes</h2>
+                        </div>
+
+                        <p class="watch-card-clock">2 month and 26 days</p>
+
+                        <button class="watch-card-button">
+                            <div class="watch-card-button-circle"></div>
+                            <div class="watch-card-button-circle"></div>
+                            <div class="watch-card-button-circle"></div>
+                        </button>
+                    </div>
+
+                </section>
+
+                <div class="free-space" style="height: 150px;"></div>
+            </div>
+
+            <button id="add-watch-vault-button" class="add-watch-vault-button-visible">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+    </body>
+
+    <script type="module" src="/public/Scripts/index.js"></script>
+
+</html>

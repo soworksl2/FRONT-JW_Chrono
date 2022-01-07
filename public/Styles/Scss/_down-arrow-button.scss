@@ -1,0 +1,38 @@
+@import "_variables";
+
+.next-page-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .first-corner{
+        width: 25px;
+        background-color: $color-brand-red;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+
+    .last-corner{
+        width: 25px;
+        background-color: $color-brand-red;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+
+    .trapezoid-shape{
+        height: 18px;
+        width: 50%;
+        background-color: $color-brand-red;
+        text-align: center;
+
+        cursor: pointer;
+        transition: height 1s;
+
+        &>.arrow-icon{
+            color: $color-bone-white;
+            font-size: 15px;
+        }
+
+        &:hover{
+            height: 25px;
+        }
+    }
+}
