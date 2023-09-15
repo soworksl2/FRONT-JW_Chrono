@@ -16,14 +16,14 @@
         <script src="https://kit.fontawesome.com/23a9919148.js" crossorigin="anonymous"></script>
         <!-- -*-*-*-*-*-*-*-* -->
 
-        <link rel="stylesheet" href="/public/Styles/main-style.css">
+        <link rel="stylesheet" href="public/Styles/main-style.css">
     </head>
     <body>
 
         <!-- Modals-Dialogs -->
-        <section id="modal-section" class="">
+        <section id="modal-section" class="modal-section-hidden">
 
-            <div id="select-watch-dialog" class="modal">
+            <div id="select-watch-dialog" class="modal modal-hidden">
                 <h2 class="modal-title">
                     Select a watch
                 </h2>
@@ -71,10 +71,10 @@
 
                             <p>
                                 The current time in <span class="watch-location">the Idaho panhandle and most of Nevada and Oregon, United State</span> is <br>
-                                <span>Sunday, 2 of January of 2022</span>
+                                <span>Sunday, 2 of January of 2022</span> (Not Sync).
                             </p>
 
-                            <p class="clock">23:47:01</p>
+                            <p id="clock-displayer" class="clock">23:47:01</p>
 
                         </div>
 
@@ -85,7 +85,7 @@
                     </button>
                 </div>
 
-                <div class="next-page-button">
+                <div id="next-page-btn" class="next-page-button">
                     <div class="first-corner"></div>
                     <div class="trapezoid-shape">
                         <i class="fas fa-chevron-down arrow-icon"></i>
@@ -102,7 +102,7 @@
                     <div class="watch-card">
                         <div class="watch-card-title">
                             <i class="watch-card-title-icon fas fa-clock"></i>
-                            <h2 class="watch-card-title-text">Temporizador para hacer la tarea y no recibir un patatus en invierno mamaguevaso infernal</h2>
+                            <h2 class="watch-card-title-text">temporizador numero 1: chocolate</h2>
                         </div>
 
                         <p class="watch-card-clock">2 month and 26 days</p>
@@ -117,7 +117,7 @@
                     <div class="watch-card">
                         <div class="watch-card-title">
                             <i class="watch-card-title-icon fas fa-clock"></i>
-                            <h2 class="watch-card-title-text">mamaguevaso infernal</h2>
+                            <h2 class="watch-card-title-text">temporizador numero 2: with a very long name</h2>
                         </div>
 
                         <p class="watch-card-clock">2 month and 26 days</p>
@@ -132,7 +132,7 @@
                     <div class="watch-card">
                         <div class="watch-card-title">
                             <i class="watch-card-title-icon fas fa-clock"></i>
-                            <h2 class="watch-card-title-text">potinetes</h2>
+                            <h2 class="watch-card-title-text">temporizador numero 3: harina</h2>
                         </div>
 
                         <p class="watch-card-clock">2 month and 26 days</p>
@@ -149,12 +149,12 @@
                 <div class="free-space" style="height: 150px;"></div>
             </div>
 
-            <button id="add-watch-vault-button" class="add-watch-vault-button-visible">
+            <button id="add-watch-vault-button" class="add-watch-vault-button-hidden">
                 <i class="fas fa-plus"></i>
             </button>
         </div>
     </body>
 
-    <script type="module" src="/public/Scripts/index.js"></script>
+    <script src="public/Scripts/index.js"></script>
 
 </html>
